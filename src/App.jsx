@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Newsletter from './Component/Newsletter/Newsletter'
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <Newsletter />
+    </div>
   )
 }
 

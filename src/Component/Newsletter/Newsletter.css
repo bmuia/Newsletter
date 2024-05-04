@@ -1,0 +1,33 @@
+body{
+    background-color: hsl(234, 29%, 20%);
+    height: 100vh;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .box{
+    width: 80%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    width: auto;
+    padding: 20px;
+    border-radius: 1.1em;
+}
+.box .right-side{
+    display: flex;
+    justify-self: center;
+    padding: 10px;
+}
+.box .right-side h1{
+    color: hsl(234, 29%, 20%);
+    font-size: 60px;
+}
+.box .right-side p{
+    color: hsl(235, 18%, 26%);
+}
+.box .right-side ul{
+    color: hsl(235, 18%, 26%);
+}
