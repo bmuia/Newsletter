@@ -1,33 +1,156 @@
-body{
+body {
     background-color: hsl(234, 29%, 20%);
-    height: 100vh;
 }
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main .box{
+
+.box {
     width: 80%;
     background-color: #fff;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    width: auto;
+    grid-template-columns: 1fr;
     padding: 20px;
     border-radius: 1.1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.box .right-side{
+
+@media (min-width: 768px) {
+    .box {
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
+
+.right-side {
     display: flex;
     justify-self: center;
     padding: 10px;
 }
-.box .right-side h1{
+
+.right-side h1 {
     color: hsl(234, 29%, 20%);
     font-size: 60px;
+    margin-bottom: 20px;
 }
-.box .right-side p{
+
+.right-side p {
     color: hsl(235, 18%, 26%);
 }
-.box .right-side ul{
+
+.right-side ul {
     color: hsl(235, 18%, 26%);
+}
+
+.right-side ul li {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+
+.right-side ul svg {
+    padding-right: 10px;
+    margin: 2px;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label {
+    margin-bottom: 10px;
+    color: hsl(235, 18%, 26%);
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+form input {
+    margin-bottom: 30px;
+    padding: 16px;
+    border-radius: 0.5em;
+    border: 1.5px solid grey;
+}
+
+.err {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+}
+
+form input.error {
+    border-color: red;
+    background-color: pink;
+}
+
+.col {
+    font-size: 13px;
+    color: red;
+    background-color: transparent;
+}
+
+button {
+    padding: 16px;
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    border-radius: 0.5em;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: linear-gradient(to right, hsl(4, 100%, 67%), rgb(223, 152, 20));
+}
+
+.success-message {
+    width: 80%;
+    max-width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 1.7em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .success-message {
+        width: 50%;
+    }
+}
+
+.success-message h2 {
+    font-size: 24px;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.success-message p {
+    margin-top: 0;
+}
+
+.success-message svg {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.home-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.home-btn button {
+    width: 100%;
 }
