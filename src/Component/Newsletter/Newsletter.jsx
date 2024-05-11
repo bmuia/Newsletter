@@ -72,8 +72,8 @@ function Newsletter() {
             <p>A confirmation email has been sent to <b>{email}</b>. Please open it and click the button inside to confirm your subscription</p>
             <div className='home-btn'>
               <button onClick={() => {
-                setOpenForm(true);
-                setSuccessMessage(false);
+                setOpenForm(true)
+                setSuccessMessage(false)
               }}>Dismiss message</button>
             </div>
           </div>
