@@ -46,7 +46,7 @@ Or you can access the web application directly via this [https://newsletter-seve
 ## Technologies Used
 1. React
 2. CSS3
-3. HTNL
+3. HTML
 *****
 ## Contact Information
 * Email : belammuia0@gmail.com
