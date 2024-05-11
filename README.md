@@ -8,8 +8,8 @@ Create a newsletter subscription feature for a website, allowing users to sign u
 ******
 
 ## SCREENSHOTS
-- <img width="761" alt="rrror 404" src="/images/img1.png">
-- <img width="761" alt="error 404" src="/images/img2.png">
+- <img width="761" alt="rrror 404" src="https://github.com/bmuia/Newsletter/blob/main/public/images/img1.png">
+- <img width="761" alt="error 404" src="https://github.com/bmuia/Newsletter/blob/main/public/images/img2.png">
 
 
 ********
