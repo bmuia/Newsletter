@@ -9,21 +9,14 @@ main {
 }
 
 .box {
-    width: 80%;
+    width: auto;
     background-color: #fff;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1.5fr;
     padding: 20px;
     border-radius: 1.1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-@media (min-width: 768px) {
-    .box {
-        grid-template-columns: 1.5fr 1fr;
-    }
-}
-
 .right-side {
     display: flex;
     justify-self: center;
@@ -153,4 +146,25 @@ button:hover {
 
 .home-btn button {
     width: 100%;
+}
+
+
+@media (max-width: 786px){
+    .left-side img{
+        width: 100%;
+        height: 100%;
+    }
+    .right-side h1 {
+        font-size: 55px;
+    }
+    .right-side ul li {
+        padding: 2px;
+    }
+}
+
+@media (max-width: 723px){
+    .box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }

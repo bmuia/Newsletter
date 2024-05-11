@@ -23,9 +23,8 @@ function Newsletter() {
   return (
     <div>
       <main>
-        <div className="box">
-          {openForm && (
-            <>
+        {openForm && (
+          <div className="box">
             <div className="right-side">
               <div className="content">
                 <h1>Stay updated!</h1>
@@ -61,28 +60,24 @@ function Newsletter() {
                 </form>
               </div>
             </div>
- 
-          <div className="left-side">
-            <img src="/images/illustration-sign-up-desktop.svg" alt="" />
-          </div>
-            </> )}
-            <div>
-            {successMessage && 
-  <div className="success-message">
-     <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#d6543d" }} />
-    <h2>Thanks for subscribing!</h2>
-    <p>A confirmation email has been sent to <b>{email}</b>. Please open it and click the button inside to confirm your subscription</p>
-     <div className='home-btn'>
-     <button onClick={() => {
-      setOpenForm(true);
-      setSuccessMessage(false);
-     }
-      }>Dismiss message</button>
-     </div>
-  </div>
-}
+            <div className="left-side">
+              <img src="/images/illustration-sign-up-desktop.svg" alt="" />
             </div>
-        </div>
+          </div>
+        )}
+        {successMessage && 
+          <div className="success-message">
+            <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#d6543d" }} />
+            <h2>Thanks for subscribing!</h2>
+            <p>A confirmation email has been sent to <b>{email}</b>. Please open it and click the button inside to confirm your subscription</p>
+            <div className='home-btn'>
+              <button onClick={() => {
+                setOpenForm(true);
+                setSuccessMessage(false);
+              }}>Dismiss message</button>
+            </div>
+          </div>
+        }
       </main>
     </div>
   );
