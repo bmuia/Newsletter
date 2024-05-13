@@ -24,6 +24,7 @@ function Newsletter() {
     <div>
       <main>
         {openForm && (
+          <div className='home'>
           <div className="box">
             <div className="right-side">
               <div className="content">
@@ -63,6 +64,7 @@ function Newsletter() {
             <div className="left-side">
               <img src="/images/illustration-sign-up-desktop.svg" alt="" />
             </div>
+          </div>
           </div>
         )}
         {successMessage && 
